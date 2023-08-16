@@ -73,7 +73,7 @@ function App() {
     setCheckPriority(!checkPriority);
   };
 
-  // Filtered Tasks - Useeffect
+  // Filtered Tasks
   useEffect(() => {
     if (checkPriority) {
       const filteredPriorityTasks = tasks.filter((task) => task.priority);
