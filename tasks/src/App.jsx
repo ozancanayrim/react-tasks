@@ -30,16 +30,13 @@ function App() {
   //Form submit
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
     if (isEdit) {
       const editedNewTasks = tasks;
-
       editedNewTasks[editedTaskIndex] = form;
       setIsEdit(false);
     } else {
       setTasks([...tasks, form]);
     }
-
     setForm({ task: "", isDone: false, priority: false });
   };
 
@@ -64,7 +61,6 @@ function App() {
     const newDoneTasks = [...tasks];
     const doneTaskIndex = newDoneTasks.findIndex((task) => task.id === id);
     newDoneTasks[doneTaskIndex].isDone = !newDoneTasks[doneTaskIndex].isDone;
-
     setTasks(newDoneTasks);
   };
 
@@ -86,7 +82,6 @@ function App() {
   // Get tasks from localstorage
   useEffect(() => {
     const getLocalStorageTasks = JSON.parse(localStorage.getItem("tasks"));
-
     if (getLocalStorageTasks) {
       setTasks(getLocalStorageTasks);
     }
