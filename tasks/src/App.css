@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) and (min-width: 0px) {
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .done-button {
+    margin-top: 5px;
+  }
+
+  .edit-button {
+    margin-top: 5px;
+  }
+
+  .delete-button {
+    margin-top: 5px;
+  }
+
+  .content-group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
