@@ -94,9 +94,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="d-flex justify-content-center text-success">
-        Focus on Your Tasks
-      </h1>
+      <h1 className="d-flex justify-content-center text-success">Task List</h1>
       <div className="row d-flex justify-content-center">
         <div className="col-sm-6 mt-5">
           <div className="d-flex justify-content-end">
